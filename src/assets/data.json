@@ -1,0 +1,274 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "Inception",
+      "ano": 2010,
+      "descricao": "Um ladrão invade sonhos para roubar segredos.",
+      "genero": "Ficção Científica",
+      "poster": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Interstellar",
+      "ano": 2014,
+      "descricao": "Exploradores viajam através de um buraco de minhoca.",
+      "genero": "Aventura / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "The Dark Knight",
+      "ano": 2008,
+      "descricao": "Batman enfrenta o caos provocado pelo Coringa.",
+      "genero": "Ação / Drama",
+      "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "The Matrix",
+      "ano": 1999,
+      "descricao": "Um hacker descobre a verdade sobre sua realidade.",
+      "genero": "Sci-Fi / Ação",
+      "poster": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Avatar",
+      "ano": 2009,
+      "descricao": "Um ex-fuzileiro se envolve com o povo Na'vi em Pandora.",
+      "genero": "Aventura / Fantasia",
+      "poster": "https://image.tmdb.org/t/p/w500/6EiRUJpuoeQPghrs3YNktfnqOVh.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Gladiator",
+      "ano": 2000,
+      "descricao": "Um general romano busca vingança após ser traído.",
+      "genero": "Ação / Drama",
+      "poster": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "The Lord of the Rings: The Fellowship of the Ring",
+      "ano": 2001,
+      "descricao": "Um grupo parte para destruir o Um Anel.",
+      "genero": "Fantasia / Aventura",
+      "poster": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "The Lord of the Rings: The Two Towers",
+      "ano": 2002,
+      "descricao": "A jornada continua enquanto a guerra se aproxima.",
+      "genero": "Fantasia / Aventura",
+      "poster": "https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGNJUq9.jpg"
+    },
+    {
+      "id": 9,
+      "titulo": "The Lord of the Rings: The Return of the King",
+      "ano": 2003,
+      "descricao": "A batalha final pela Terra-média.",
+      "genero": "Fantasia / Aventura",
+      "poster": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+    },
+    {
+      "id": 10,
+      "titulo": "The Shawshank Redemption",
+      "ano": 1994,
+      "descricao": "A história de esperança e amizade dentro de uma prisão.",
+      "genero": "Drama",
+      "poster": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg"
+    },
+    {
+      "id": 11,
+      "titulo": "Rambo: First Blood",
+      "ano": 1982,
+      "descricao": "Um veterano de guerra enfrenta abusos policiais e luta pela sobrevivência.",
+      "genero": "Ação",
+      "poster": "https://image.tmdb.org/t/p/w500/2YvG0SiyVJrjYcJbZQzQFjZrj6.jpg"
+    },
+    {
+      "id": 12,
+      "titulo": "Rambo: First Blood Part II",
+      "ano": 1985,
+      "descricao": "Rambo retorna ao Vietnã para resgatar prisioneiros de guerra.",
+      "genero": "Ação",
+      "poster": "https://image.tmdb.org/t/p/w500/ApD3l8uIvuXvYDn8ApX2HFqRSb.jpg"
+    },
+    {
+      "id": 13,
+      "titulo": "Rambo III",
+      "ano": 1988,
+      "descricao": "Rambo vai ao Afeganistão resgatar seu comandante capturado.",
+      "genero": "Ação",
+      "poster": "https://image.tmdb.org/t/p/w500/8o1Z45gPXgC7vZk2g0nLB522S7.jpg"
+    },
+    {
+      "id": 14,
+      "titulo": "Rambo",
+      "ano": 2008,
+      "descricao": "Rambo ajuda missionários capturados na Birmânia.",
+      "genero": "Ação",
+      "poster": "https://image.tmdb.org/t/p/w500/avfS2r7Di5H7KqkZoM7LrRZtGJ.jpg"
+    },
+    {
+      "id": 15,
+      "titulo": "Rambo: Last Blood",
+      "ano": 2019,
+      "descricao": "Rambo enfrenta um cartel mexicano para salvar uma jovem sequestrada.",
+      "genero": "Ação",
+      "poster": "https://image.tmdb.org/t/p/w500/kTQ3J8oTTK6VdS9E9QnUnxF2p2.jpg"
+    },
+    {
+      "id": 16,
+      "titulo": "The Terminator",
+      "ano": 1984,
+      "descricao": "Um ciborgue assassino viaja no tempo para matar Sarah Connor.",
+      "genero": "Sci-Fi / Ação",
+      "poster": "https://image.tmdb.org/t/p/w500/qvktm0BHcnmDpul4Hz01GIazWPr.jpg"
+    },
+    {
+      "id": 17,
+      "titulo": "Terminator 2: Judgment Day",
+      "ano": 1991,
+      "descricao": "O Exterminador retorna para proteger John Connor.",
+      "genero": "Sci-Fi / Ação",
+      "poster": "https://image.tmdb.org/t/p/w500/weVXMD5QBGeQil4HEATZqAkXeEc.jpg"
+    },
+    {
+      "id": 18,
+      "titulo": "Terminator 3: Rise of the Machines",
+      "ano": 2003,
+      "descricao": "John Connor enfrenta uma nova ameaça robótica.",
+      "genero": "Sci-Fi / Ação",
+      "poster": "https://image.tmdb.org/t/p/w500/5gJkVIVU7FDp7AfRAbPSvvdbre2.jpg"
+    },
+    {
+      "id": 19,
+      "titulo": "Predator",
+      "ano": 1987,
+      "descricao": "Um comando militar enfrenta um caçador alienígena na selva.",
+      "genero": "Ação / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/6pQeQZ8VQ6g7YwjdWqZ0pQfM9v.jpg"
+    },
+    {
+      "id": 20,
+      "titulo": "Predator 2",
+      "ano": 1990,
+      "descricao": "O Predador chega a Los Angeles e enfrenta a polícia.",
+      "genero": "Ação / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/5H0YVZl5dHObcR1cWg5wuKADVY.jpg"
+    },
+    {
+      "id": 21,
+      "titulo": "Predators",
+      "ano": 2010,
+      "descricao": "Humanos são levados a um planeta alienígena para serem caçados.",
+      "genero": "Ação / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/6iQKz9HvrT6GfFqfFqZP5uQFQy.jpg"
+    },
+    {
+      "id": 22,
+      "titulo": "The Predator",
+      "ano": 2018,
+      "descricao": "Predadores geneticamente modificados chegam à Terra.",
+      "genero": "Ação / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/wMq9kQXTeQCHUZOG4fAe5cAxyUA.jpg"
+    },
+    {
+      "id": 23,
+      "titulo": "Prey",
+      "ano": 2022,
+      "descricao": "Uma guerreira Comanche enfrenta um Predador no século XVIII.",
+      "genero": "Ação / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/ujr5pztc1oitbe7ViMUOilFaJ7s.jpg"
+    },
+    {
+      "id": 24,
+      "titulo": "Alien vs Predator",
+      "ano": 2004,
+      "descricao": "Humanos ficam presos em uma batalha entre Aliens e Predadores.",
+      "genero": "Ação / Terror / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/2lECpiGgo1eLHdK5rCfqN6wJdPc.jpg"
+    },
+    {
+      "id": 25,
+      "titulo": "Aliens vs Predator: Requiem",
+      "ano": 2007,
+      "descricao": "Um híbrido Alien-Predador aterroriza uma cidade.",
+      "genero": "Terror / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/2S0A1kYyqSgGJE0E7E5Wdl66T4A.jpg"
+    },
+    {
+      "id": 26,
+      "titulo": "Alien",
+      "ano": 1979,
+      "descricao": "A tripulação da Nostromo enfrenta uma criatura mortal.",
+      "genero": "Terror / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/vfrQk5IPloGg1v9RzR9YFzRZ0z.jpg"
+    },
+    {
+      "id": 27,
+      "titulo": "Aliens",
+      "ano": 1986,
+      "descricao": "Ripley retorna ao planeta LV-426 com fuzileiros navais.",
+      "genero": "Ação / Terror / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg"
+    },
+    {
+      "id": 28,
+      "titulo": "Alien 3",
+      "ano": 1992,
+      "descricao": "Ripley enfrenta um novo Alien em uma prisão espacial.",
+      "genero": "Terror / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/3H4xXHzkwmo1wy1v7lZs48QmYk.jpg"
+    },
+    {
+      "id": 29,
+      "titulo": "Star Wars: A New Hope",
+      "ano": 1977,
+      "descricao": "Luke Skywalker descobre seu destino como Jedi.",
+      "genero": "Fantasia / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+    },
+    {
+      "id": 30,
+      "titulo": "Star Wars: The Empire Strikes Back",
+      "ano": 1980,
+      "descricao": "O Império contra-ataca enquanto Luke treina com Yoda.",
+      "genero": "Fantasia / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/7BuH8itoSrLExs2YZSsM01Qk2no.jpg"
+    },
+    {
+      "id": 31,
+      "titulo": "Star Wars: Return of the Jedi",
+      "ano": 1983,
+      "descricao": "Luke enfrenta Darth Vader e o Imperador.",
+      "genero": "Fantasia / Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w500/jx5p0aHlbPXqe3AH9G15NvmWaqQ.jpg"
+    }
+  ],
+
+  "avaliacoes": [
+    { "id": 1, "filmeId": 1, "autor": "Ana", "nota": 5, "comentario": "Excelente!" },
+    { "id": 2, "filmeId": 2, "autor": "Marcos", "nota": 5, "comentario": "Obra-prima!" },
+    { "id": 3, "filmeId": 3, "autor": "Julia", "nota": 5, "comentario": "O melhor filme de super-herói!" },
+    { "id": 4, "filmeId": 4, "autor": "Rafa", "nota": 5, "comentario": "Revolucionário." },
+    { "id": 5, "filmeId": 11, "autor": "Carlos", "nota": 4, "comentario": "Rambo é bruto demais!" },
+    { "id": 6, "filmeId": 16, "autor": "Pedro", "nota": 5, "comentario": "O Exterminador é icônico." },
+    { "id": 7, "filmeId": 19, "autor": "Bruno", "nota": 5, "comentario": "Predador é clássico absoluto." },
+    { "id": 8, "filmeId": 24, "autor": "Lia", "nota": 4, "comentario": "AVP é diversão garantida." },
+    { "id": 9, "filmeId": 29, "autor": "Miguel", "nota": 5, "comentario": "Star Wars mudou o cinema." }
+  ],
+
+  "questoes": [
+    { "id": 1, "filmeId": 1, "pergunta": "O final é real ou sonho?" },
+    { "id": 2, "filmeId": 2, "pergunta": "O buraco de minhoca é plausível?" },
+    { "id": 3, "filmeId": 11, "pergunta": "Rambo poderia ter evitado o confronto?" },
+    { "id": 4, "filmeId": 16, "pergunta": "A Skynet poderia ser evitada?" },
+    { "id": 5, "filmeId": 19, "pergunta": "O Predador escolhe suas presas por honra?" },
+    { "id": 6, "filmeId": 24, "pergunta": "Quem realmente venceria sem humanos no meio?" },
+    { "id": 7, "filmeId": 29, "pergunta": "Luke estava pronto para enfrentar Vader?" }
+  ]
+}
