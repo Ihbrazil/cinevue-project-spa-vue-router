@@ -14,23 +14,28 @@
 </script>
 
 <template>
-  <div>
+  <div class="favoritos-container">
     <h1>Meus Favoritos</h1>
 
-    <div v-if="filmes.length === 0">
+    <div class="mensagem-vazio" v-if="filmes.length === 0">
       Nenhum filme favoritado ainda.
     </div>
 
     <div v-for="filme in filmes" :key="filme.id">
-      <h3>{{ filme.titulo }}</h3>
-      <RouterLink :to="`/filmes/${filme.id}`">Ver detalhes</RouterLink>
+      <div class="card">
+        <div class="card-header">
+          <h3>{{ filme.titulo }}</h3>
+          
+          <RouterLink :to="`/filmes/${filme.id}`">Ver detalhes</RouterLink>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-/* ====== CONTAINER ====== */
-div {
+/* ====== CONTAINER PRINCIPAL ====== */
+.favoritos-container {
   min-height: 60vh;
   padding: 3rem 2rem;
   background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
@@ -55,7 +60,7 @@ h1 {
 }
 
 /* ====== MENSAGEM DE VAZIO ====== */
-div:nth-child(2) {
+.mensagem-vazio {
   text-align: center;
   font-size: 1.4rem;
   opacity: 0.85;
@@ -64,7 +69,7 @@ div:nth-child(2) {
 }
 
 /* ====== CARD DE FILME ====== */
-div:nth-child(n+3) {
+.card {
   background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   padding: 1.5rem;
@@ -76,16 +81,21 @@ div:nth-child(n+3) {
   transition: transform .3s ease, box-shadow .3s ease;
 }
 
-div:nth-child(n+3):hover {
+.card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 0 35px rgba(255, 200, 0, 0.25);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ====== TÍTULO DO FILME ====== */
 h3 {
   font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 1rem;
   color: #ffd95a;
   text-shadow: 0 0 8px rgba(255, 200, 0, 0.4);
 }

@@ -1,30 +1,47 @@
-<script setup>
-    import { ref, onMounted } from 'vue'
-    import { useRoute } from 'vue-router'
+<<script setup>
+import { ref, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 
-    const route = useRoute()
-    const filme = ref(null)
+const route = useRoute()
+const filme = ref(null)
 
-    onMounted(async () => {
-        const response = await fetch("/data.json")
-        const dados = await response.json()
-        filme.value = dados.filmes.find(f => f.id == route.params.id)
-    })
+onMounted(async () => {
+  const response = await fetch("/data.json")
+  const dados = await response.json()
+  filme.value = dados.filmes.find(f => f.id == route.params.id)
+})
 </script>
 
 <template>
-  <div v-if="filme">
-    <h2>{{ filme.titulo }}</h2>
-    <img :src="filme.poster" width="250" />
-    <p>{{ filme.descricao }}</p>
+  <div class="card-light" v-if="filme">
+    <h3>Informações</h3>
+
+    <ul>
+      <li>
+        <strong>Título:</strong> {{ filme.titulo }}
+      </li>
+
+      <li>
+        <strong>Ano:</strong> {{ filme.ano }}
+      </li>
+
+      <li>
+        <strong>Descrição:</strong>
+        <p>{{ filme.descricao }}</p>
+      </li>
+
+      <li>
+        <img :src="filme.poster" width="250" />
+      </li>
+    </ul>
   </div>
 </template>
 
 <style scoped>
 /* ====== CONTAINER ====== */
-div {
+.card-light {
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -41,8 +58,8 @@ h3 {
   margin-bottom: 1.5rem;
   text-align: center;
   background: linear-gradient(90deg, #ffcc00, #ff8800);
-  -webkit-background-clip: text; /* compatibilidade com navegadores WebKit */
-  background-clip: text;         /* versão padrão recomendada */
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 18px rgba(255, 200, 0, 0.25);
   animation: glow 3s infinite alternate;
@@ -69,6 +86,15 @@ li {
 li:hover {
   transform: translateX(10px);
   box-shadow: 0 0 20px rgba(255, 200, 0, 0.25);
+}
+
+/* ====== DESCRIÇÃO ====== */
+p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.85;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255,255,255,0.2);
 }
 
 /* ====== ANIMAÇÕES ====== */
@@ -103,6 +129,9 @@ li:hover {
   }
   li {
     font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
   }
 }
 </style>

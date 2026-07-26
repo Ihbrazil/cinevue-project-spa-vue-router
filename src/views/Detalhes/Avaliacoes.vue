@@ -1,15 +1,15 @@
 <script setup>
-    import { ref, onMounted } from 'vue'
-    import { useRoute } from 'vue-router'
+import { ref, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 
-    const route = useRoute()
-    const avaliacoes = ref([])
+const route = useRoute()
+const avaliacoes = ref([])
 
-    onMounted(async () => {
-        const response = await fetch('/data.json')
-        const dados = await response.json()
-        avaliacoes.value = dados.avaliacoes.filter(a => a.filmeId == route.params.id)
-    })
+onMounted(async () => {
+  const response = await fetch('/data.json')
+  const dados = await response.json()
+  avaliacoes.value = dados.avaliacoes.filter(a => a.filmeId == route.params.id)
+})
 </script>
 
 <template>
@@ -18,7 +18,7 @@
 
     <ul>
       <li v-for="a in avaliacoes" :key="a.id">
-        {{ a.autor }} — Nota {{ a.nota }}  
+        <strong>{{ a.autor }}</strong> — Nota {{ a.nota }}
         <p>{{ a.comentario }}</p>
       </li>
     </ul>
@@ -46,8 +46,8 @@ h3 {
   margin-bottom: 1.5rem;
   text-align: center;
   background: linear-gradient(90deg, #ffcc00, #ff8800);
-  -webkit-background-clip: text; /* compatibilidade com navegadores WebKit */
-  background-clip: text;         /* versão padrão recomendada */
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 18px rgba(255, 200, 0, 0.25);
   animation: glow 3s infinite alternate;
@@ -60,7 +60,7 @@ ul {
   margin: 0;
 }
 
-/* ====== ITEM DA AVALIAÇÃO ====== */
+/* ====== ITEM ====== */
 li {
   background: rgba(255, 255, 255, 0.08);
   padding: 1rem;
