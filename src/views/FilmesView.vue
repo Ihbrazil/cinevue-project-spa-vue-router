@@ -1,18 +1,18 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import { toggleFavorito, isFavorito } from '@/utils/favoritos.js'
+  import { ref, onMounted } from 'vue'
+  import { toggleFavorito, isFavorito } from '@/utils/favoritos.js'
 
-const filmes = ref([])
+  const filmes = ref([])
 
-onMounted(async () => {
-  const response = await fetch('/data.json')
-  const dados = await response.json()
-  filmes.value = dados.filmes
-})
+  onMounted(async () => {
+    const response = await fetch('/data.json')
+    const dados = await response.json()
+    filmes.value = dados.filmes
+  })
 
-function favoritar(id) {
-  toggleFavorito(id)
-}
+  function favoritar(id) {
+    toggleFavorito(id)
+  }
 </script>
 
 <template>

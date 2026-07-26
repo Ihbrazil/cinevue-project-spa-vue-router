@@ -1,21 +1,21 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
-import { toggleFavorito, isFavorito } from '@/utils/favoritos.js'
+  import { ref, onMounted } from 'vue'
+  import { useRoute } from 'vue-router'
+  import { toggleFavorito, isFavorito } from '@/utils/favoritos.js'
 
-const route = useRoute()
-const id = Number(route.params.id)
-const filme = ref(null)
+  const route = useRoute()
+  const id = Number(route.params.id)
+  const filme = ref(null)
 
-onMounted(async () => {
-  const response = await fetch('/src/assets/data.json')
-  const dados = await response.json()
-  filme.value = dados.filmes.find(f => f.id === id)
-})
+  onMounted(async () => {
+    const response = await fetch('/data.json')
+    const dados = await response.json()
+    filme.value = dados.filmes.find(f => f.id === id)
+  })
 
-function favoritar() {
-  toggleFavorito(id)
-}
+  function favoritar() {
+    toggleFavorito(id)
+  }
 </script>
 
 <template>

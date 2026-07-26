@@ -1,15 +1,15 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+    import { ref, onMounted } from 'vue'
+    import { useRoute } from 'vue-router'
 
-const route = useRoute()
-const filme = ref(null)
+    const route = useRoute()
+    const filme = ref(null)
 
-onMounted(async () => {
-  const response = await fetch("/data.json")
-  const dados = await response.json()
-  filme.value = dados.filmes.find(f => f.id == route.params.id)
-})
+    onMounted(async () => {
+        const response = await fetch("/data.json")
+        const dados = await response.json()
+        filme.value = dados.filmes.find(f => f.id == route.params.id)
+    })
 </script>
 
 <template>

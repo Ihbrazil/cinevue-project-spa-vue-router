@@ -1,10 +1,10 @@
 <script setup>
-defineProps({
-  avaliacao: {
-    type: Object,
-    required: true
-  }
-})
+    defineProps({
+        avaliacao: {
+            type: Object,
+            required: true
+        }
+    })
 </script>
 
 <template>

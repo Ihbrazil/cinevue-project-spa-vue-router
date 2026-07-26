@@ -1,16 +1,16 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import { getFavoritos } from '@/utils/favoritos.js'
+  import { ref, onMounted } from 'vue'
+  import { getFavoritos } from '@/utils/favoritos.js'
 
-const filmes = ref([])
-const favoritos = getFavoritos()
+  const filmes = ref([])
+  const favoritos = getFavoritos()
 
-onMounted(async () => {
-  const response = await fetch('/src/assets/data.json')
-  const dados = await response.json()
+  onMounted(async () => {
+    const response = await fetch('/data.json')
+    const dados = await response.json()
 
-  filmes.value = dados.filmes.filter(f => favoritos.includes(f.id))
-})
+    filmes.value = dados.filmes.filter(f => favoritos.includes(f.id))
+  })
 </script>
 
 <template>

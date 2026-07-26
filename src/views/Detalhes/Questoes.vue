@@ -1,3 +1,17 @@
+<script setup>
+    import { ref, onMounted } from 'vue'
+    import { useRoute } from 'vue-router'
+
+    const route = useRoute()
+    const questoes = ref([])
+
+    onMounted(async () => {
+        const response = await fetch('/data.json')
+        const dados = await response.json()
+        questoes.value = dados.questoes.filter(q => q.filmeId == route.params.id)
+    })
+</script>
+
 <template>
   <div>
     <h3>Questões</h3>
@@ -9,20 +23,6 @@
     </ul>
   </div>
 </template>
-
-<script setup>
-import { ref, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-const questoes = ref([])
-
-onMounted(async () => {
-  const response = await fetch('/src/assets/data.json')
-  const dados = await response.json()
-  questoes.value = dados.questoes.filter(q => q.filmeId == route.params.id)
-})
-</script>
 
 <style scoped>
 /* ====== CONTAINER ====== */

@@ -1,7 +1,7 @@
 <script setup>
-defineProps({
-  filme: Object
-})
+  defineProps({
+    filme: Object
+  })
 </script>
 
 <template>

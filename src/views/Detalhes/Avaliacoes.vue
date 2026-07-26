@@ -1,15 +1,15 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+    import { ref, onMounted } from 'vue'
+    import { useRoute } from 'vue-router'
 
-const route = useRoute()
-const avaliacoes = ref([])
+    const route = useRoute()
+    const avaliacoes = ref([])
 
-onMounted(async () => {
-  const response = await fetch('/src/assets/data.json')
-  const dados = await response.json()
-  avaliacoes.value = dados.avaliacoes.filter(a => a.filmeId == route.params.id)
-})
+    onMounted(async () => {
+        const response = await fetch('/data.json')
+        const dados = await response.json()
+        avaliacoes.value = dados.avaliacoes.filter(a => a.filmeId == route.params.id)
+    })
 </script>
 
 <template>
