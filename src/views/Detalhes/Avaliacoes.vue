@@ -1,16 +1,3 @@
-<template>
-  <div>
-    <h3>Avaliações</h3>
-
-    <ul>
-      <li v-for="a in avaliacoes" :key="a.id">
-        {{ a.autor }} — Nota {{ a.nota }}  
-        <p>{{ a.comentario }}</p>
-      </li>
-    </ul>
-  </div>
-</template>
-
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
@@ -24,6 +11,19 @@ onMounted(async () => {
   avaliacoes.value = dados.avaliacoes.filter(a => a.filmeId == route.params.id)
 })
 </script>
+
+<template>
+  <div>
+    <h3>Avaliações</h3>
+
+    <ul>
+      <li v-for="a in avaliacoes" :key="a.id">
+        {{ a.autor }} — Nota {{ a.nota }}  
+        <p>{{ a.comentario }}</p>
+      </li>
+    </ul>
+  </div>
+</template>
 
 <style scoped>
 /* ====== CONTAINER ====== */

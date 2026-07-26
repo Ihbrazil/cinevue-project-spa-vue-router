@@ -1,11 +1,3 @@
-<template>
-  <div v-if="filme">
-    <h2>{{ filme.titulo }}</h2>
-    <img :src="filme.poster" width="250" />
-    <p>{{ filme.descricao }}</p>
-  </div>
-</template>
-
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
@@ -14,11 +6,19 @@ const route = useRoute()
 const filme = ref(null)
 
 onMounted(async () => {
-  const response = await fetch('/src/assets/data.json')
+  const response = await fetch("/data.json")
   const dados = await response.json()
   filme.value = dados.filmes.find(f => f.id == route.params.id)
 })
 </script>
+
+<template>
+  <div v-if="filme">
+    <h2>{{ filme.titulo }}</h2>
+    <img :src="filme.poster" width="250" />
+    <p>{{ filme.descricao }}</p>
+  </div>
+</template>
 
 <style scoped>
 /* ====== CONTAINER ====== */

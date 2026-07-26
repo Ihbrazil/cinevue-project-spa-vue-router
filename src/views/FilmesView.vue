@@ -5,7 +5,7 @@ import { toggleFavorito, isFavorito } from '@/utils/favoritos.js'
 const filmes = ref([])
 
 onMounted(async () => {
-  const response = await fetch('/src/assets/data.json')
+  const response = await fetch('/data.json')
   const dados = await response.json()
   filmes.value = dados.filmes
 })
