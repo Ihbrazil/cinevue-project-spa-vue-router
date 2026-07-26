@@ -48,7 +48,8 @@ h1 {
   margin-bottom: 2rem;
   letter-spacing: 2px;
   background: linear-gradient(90deg, #ffcc00, #ff8800);
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* compatibilidade com navegadores WebKit */
+  background-clip: text;         /* versão padrão recomendada */
   -webkit-text-fill-color: transparent;
 }
 

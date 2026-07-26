@@ -23,7 +23,8 @@ h1 {
   margin-bottom: 2rem;
   letter-spacing: 2px;
   background: linear-gradient(90deg, #ff4444, #ff8800);
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* compatibilidade com navegadores WebKit */
+  background-clip: text;         /* versão padrão recomendada */
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 25px rgba(255, 100, 100, 0.25);
   animation: glow 3s infinite alternate;

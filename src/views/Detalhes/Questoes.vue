@@ -45,7 +45,8 @@ h3 {
   margin-bottom: 1.5rem;
   text-align: center;
   background: linear-gradient(90deg, #ffcc00, #ff8800);
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* compatibilidade com navegadores WebKit */
+  background-clip: text;         /* versão padrão recomendada */
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 18px rgba(255, 200, 0, 0.25);
   animation: glow 3s infinite alternate;

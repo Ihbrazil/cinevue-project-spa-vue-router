@@ -42,7 +42,8 @@ h1 {
   font-weight: 800;
   margin-bottom: 2rem;
   background: linear-gradient(90deg, #ffcc00, #ff8800);
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* compatibilidade com navegadores WebKit */
+  background-clip: text;         /* versão padrão recomendada */
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 25px rgba(255, 200, 0, 0.25);
   animation: glow 3s infinite alternate;
@@ -74,7 +75,8 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #ffcc00, #ff8800);
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* compatibilidade com navegadores WebKit */
+  background-clip: text;         /* versão padrão recomendada */
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 20px rgba(255, 200, 0, 0.25);
   letter-spacing: 1px;

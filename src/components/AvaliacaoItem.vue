@@ -39,7 +39,8 @@ h4 {
   font-weight: 600;
   margin-bottom: 0.4rem;
   background: linear-gradient(90deg, #ffcc00, #ff8800);
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* compatibilidade com navegadores WebKit */
+  background-clip: text;         /* versão padrão recomendada */
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 18px rgba(255, 200, 0, 0.25);
 }
