@@ -8,10 +8,12 @@
 ✔ Redirecionamento
 ✔ Página NotFound
 */
+
 import { createRouter, createWebHistory } from 'vue-router'
 
 // Lazy-loading
 const HomeView = () => import('../views/HomeView.vue')
+const LoginView = () => import('../views/LoginView.vue')
 const FilmesView = () => import('../views/FilmesView.vue')
 const DetalhesView = () => import('../views/DetalhesView.vue')
 const FavoritosView = () => import('../views/FavoritosView.vue')
@@ -27,6 +29,8 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', name: 'home', component: HomeView },
+
+    { path: '/login', name: 'login', component: LoginView },
 
     { path: '/filmes', name: 'filmes', component: FilmesView },
 
@@ -53,7 +57,7 @@ const router = createRouter({
       path: '/perfil',
       name: 'perfil',
       component: PerfilView,
-      meta: { requiresAuth: true } // para ver o perfil coloque false no lugar de true
+      meta: { requiresAuth: true }
     },
 
     // Redirecionamento
@@ -70,7 +74,7 @@ router.beforeEach((to) => {
 
   if (to.meta.requiresAuth && !usuario) {
     alert('Você precisa estar logado!')
-    return { name: 'home' }
+    return { name: 'login' }
   }
 })
 
